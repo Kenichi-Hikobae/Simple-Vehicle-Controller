@@ -3,8 +3,10 @@ using UnityEngine.InputSystem;
 
 public class VehicleController : MonoBehaviour
 {
-    public VehicleMovement vehicleMovement;         //  Vehicle movement component
-    public PlayerInput playerInput;                 //  Player Input Component
+    [SerializeField]
+    private VehicleMovement vehicleMovement;         //  Vehicle movement component
+    [SerializeField]
+    private PlayerInput playerInput;                 //  Player Input Component
 
     private Vector3 _RawInput;
 
@@ -35,7 +37,6 @@ public class VehicleController : MonoBehaviour
         //  Reset the rotation of the vehicle
         vehicleMovement.ResetPosition();
     }
-    //
 
     private void Update()
     {

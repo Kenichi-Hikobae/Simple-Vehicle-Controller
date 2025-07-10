@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class VehicleMainCamera : MonoBehaviour
 {
-    public float rotationThreshold = 1f;
-    public float cameraStickiness = 10.0f;
-    public float cameraRotationSpeed = 5.0f;
+    [SerializeField]
+    private float rotationThreshold = 1f;
+    [SerializeField]
+    private float cameraStickiness = 10.0f;
+    [SerializeField]
+    private float cameraRotationSpeed = 5.0f;
 
-    Transform _CarTransform;
-    Rigidbody _CarRigibody;
+    private Transform _CarTransform;
+    private Rigidbody _CarRigibody;
 
     private void Awake()
     {
@@ -24,7 +27,7 @@ public class VehicleMainCamera : MonoBehaviour
         //  Interpolate the current position of the camera and move it with the car
         transform.position = Vector3.Lerp(transform.position, _CarTransform.position, cameraStickiness * Time.fixedDeltaTime);
                 
-        if (_CarRigibody.velocity.magnitude < rotationThreshold)
+        if (_CarRigibody.linearVelocity.magnitude < rotationThreshold)
         {
             //  If the vehicle is stop, then look forward
             cameraRot = Quaternion.LookRotation(_CarTransform.forward);
@@ -32,7 +35,7 @@ public class VehicleMainCamera : MonoBehaviour
         else
         {
             //  If the vehicle is moving, then the camera rotates where the vehicle is moving
-            cameraRot = Quaternion.LookRotation(_CarRigibody.velocity.normalized);
+            cameraRot = Quaternion.LookRotation(_CarRigibody.linearVelocity.normalized);
         }
 
         //  Interpolate the current rotation of the camera

@@ -2,18 +2,26 @@ using UnityEngine;
 
 public class VehicleMovement : MonoBehaviour
 {
-    [SerializeField] private float motorForce = 1000.0f;        //  Max force applies to the motor torque
-    [SerializeField] private float brakeForce = 3000.0f;        //  Brake force of the vehicle
-    [SerializeField] private float maxSteeringAngle = 30.0f;    //  Angle of the steering
-    [SerializeField] private Vector3 carCenterMass;             //  Center of the mass of the car, to avoid the car flip
+    [SerializeField] 
+    private float motorForce = 1000.0f; //  Max force applies to the motor torque
+    [SerializeField] 
+    private float brakeForce = 3000.0f; //  Brake force of the vehicle
+    [SerializeField] 
+    private float maxSteeringAngle = 30.0f; //  Angle of the steering
+    [SerializeField] 
+    private Vector3 carCenterMass;  //  Center of the mass of the car, to avoid the car flip
 
     //  Wheel colliders
-    [SerializeField] private WheelCollider[] frontWheelsColliders;
-    [SerializeField] private WheelCollider[] backWheelsColliders;
+    [SerializeField] 
+    private WheelCollider[] frontWheelsColliders;
+    [SerializeField] 
+    private WheelCollider[] backWheelsColliders;
 
     //  Wheels meshes position
-    [SerializeField] private Transform[] frontWheelsTransform;
-    [SerializeField] private Transform[] backWheelsTransform;
+    [SerializeField] 
+    private Transform[] frontWheelsTransform;
+    [SerializeField] 
+    private Transform[] backWheelsTransform;
 
     private Vector3 movementDirection;          //  Input movement
     private float _CurrentBreakForce;           //  Current brake force apply
@@ -129,7 +137,7 @@ public class VehicleMovement : MonoBehaviour
 
     private void StopVehicle()
     {
-        _CarRigibody.velocity = Vector3.zero;
+        _CarRigibody.linearVelocity = Vector3.zero;
         for (int i = 0; i < frontWheelsColliders.Length; i++)
         {
             frontWheelsColliders[i].motorTorque = 0;

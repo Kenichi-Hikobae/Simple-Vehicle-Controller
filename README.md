@@ -9,5 +9,8 @@ En el proyecto tambien encontraras un modelo completo hecho en Blender de un veh
 Para poder coducir el coche, el movimiento es mediante las teclas W, A, S, D, para frenar el coche es con la barra espaciadora y para poder resetear la position del coche es con la tecla R.
 
 En el proyecto encontraras cosas utiles para entender como empezar a realizar un juego de carreras o enfocado al uso de vehiculos en Unity.
+
+<img width="1592" height="885" alt="image" src="https://github.com/user-attachments/assets/e831ebcc-cc6a-4748-8445-6ab84e805136" />
+
 ----------------------------------
 Software: Unity version: 2020.2.1f1 Blender Version: 2.91

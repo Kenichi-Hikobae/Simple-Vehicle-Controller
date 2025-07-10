@@ -1,13 +1,19 @@
 Simple Vehicle Controller
 ----------------------------------
-Proyecto de Unity acerca de un simple controlador de coche utilizando las diferentes herramientas que brinda Unity.
+Unity project about a simple car controller using the different tools provided by Unity.
 
-El principal componente utilizado fue llanta collisionadores, que mediante fisicas mueven el coche. Todo fue hecho mediante programacion y configurando las entradas con el nuevo Input System de Unity. El coche puede acelerar, girar y frenar, ademas de tener una camara automatica que sigue y rota con el coche.
+The main component used was collision rim colliders, which by means of physics move the car. Everything was done by programming and configuring the inputs with Unity's new Input System. The car can accelerate, turn and brake, besides having an automatic camera that follows and rotates with the car.
 
-En el proyecto tambien encontraras un modelo completo hecho en Blender de un vehiculo que se uso para realizar este demo. Tambien en la escena encontraras diferentes obstaculos para poder interactuar el coche con ellos.
+In the project you will also find a complete model made in Blender of a vehicle that was used to make this demo. Also in the scene you will find different obstacles to interact the car with them.
 
-Para poder coducir el coche, el movimiento es mediante las teclas W, A, S, D, para frenar el coche es con la barra espaciadora y para poder resetear la position del coche es con la tecla R.
+To be able to steer the car, the movement is with the keys W, A, S, D, to brake the car is with the space bar and to be able to reset the position of the car is with the R key.
 
-En el proyecto encontraras cosas utiles para entender como empezar a realizar un juego de carreras o enfocado al uso de vehiculos en Unity.
+In the project you will find useful things to understand how to start making a racing game or focused on the use of vehicles in Unity.
+
+<img width="1592" height="885" alt="image" src="https://github.com/user-attachments/assets/e831ebcc-cc6a-4748-8445-6ab84e805136" />
+<img width="1594" height="892" alt="image" src="https://github.com/user-attachments/assets/634a6be7-421c-41a4-985a-d4a91a3ca0b7" />
+<img width="1591" height="887" alt="image" src="https://github.com/user-attachments/assets/fbb7979c-dcf0-4c09-822b-1d2e23b07705" />
+
+
 ----------------------------------
 Software: Unity version: 2020.2.1f1 Blender Version: 2.91
